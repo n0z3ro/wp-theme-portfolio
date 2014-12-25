@@ -28,8 +28,16 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
   <header id="masthead" class="site-header" role="banner">
-    <nav role="navigation" class="site-navigation main-navigation">
+    <div class="logo-link">
+      
+    </div>
+    <div class="site-title">
+      <h1>
+        <?php bloginfo( 'name' ); ?>
+      </h1>
+    </div>
+    <nav class="site-navigation main-navigation" role="navigation">
+      <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
     </nav><!-- .site-navigation .main-navigation -->
   </header><!-- #masthead .site-header -->
 <div id="main" class="site-main" role="main">
-  

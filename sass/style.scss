@@ -10,11 +10,48 @@ License URI: license.txt
 Tags: responsive, custom-backgroud, custom-header, custom-menu, featured-images, microformats, post-formats
 */
 
+//import partials
 @import "compass";
 @import "compass/reset";
 @import "variables";
 @import "reset_css";
 
+//Generic HTML Tag Styles
 body{
   background-color:$n0_light;
+}
+h1{
+  font-size: 200%;
+}
+
+//Page Specific Styles
+header{
+  position:relative;
+}
+.logo-link{
+  position:absolute;
+  z-index:2;
+  top:0;
+  left:0;
+  width:50px;
+  height:50px;
+  background-color:blue;
+}
+.site-title{
+  position:relative;
+  height:50px;
+  width:100%;
+  margin:0px;
+  background-color:$n0_yellow;
+  transform-style: preserve-3d;
+  h1{
+    position:absolute;
+    margin:0px;
+    text-align:center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    color: $n0_light;
+  }
 }
