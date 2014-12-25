@@ -24,7 +24,6 @@ function theme_settings(){
   ));
 }
 function theme_scripts() {
-  wp_enqueue_style('reset_css', get_stylesheet_directory_uri() . '/reset_css.css');
   wp_enqueue_style('main', get_stylesheet_uri());
   //wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 }

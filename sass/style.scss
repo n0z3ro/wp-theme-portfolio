@@ -10,8 +10,14 @@ License URI: license.txt
 Tags: responsive, custom-backgroud, custom-header, custom-menu, featured-images, microformats, post-formats
 */
 
+@import "compass";
+@import "compass/reset";
 @import "variables";
+@import "reset_css";
 
-html{
+body{
   background-color:$n0_light;
+}
+p{
+  font-size:1em;
 }
