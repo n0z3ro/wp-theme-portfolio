@@ -29,12 +29,22 @@ h1{
 header{
   position:relative;
   nav{
-    height:25px;
-    background-color:$n0_light_grey;
+    height:$nav-height;
+    background-color:$n0_blue;
+    div{
+      height:100%;
+    }
     ul{
-      clear:both;
+      text-align:center;
       li{
-        float:left;
+        display:inline-block;
+        line-height: $nav-height;
+        a{
+          font-family:"Consolas";
+          color:$n0_light;
+          font-size:110%;
+          text-decoration:none;
+        }
       }
     }
   }
