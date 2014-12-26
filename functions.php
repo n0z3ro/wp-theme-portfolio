@@ -19,7 +19,8 @@ function theme_settings(){
     'default-color' => 'F7F8F9',
     'default-image' => '',
   )));
-
+  add_theme_support('post-thumbnails');
+  
   register_nav_menus(array(
     'primary' => __('Primary Menu', 'n0z3ro_p'),
   ));

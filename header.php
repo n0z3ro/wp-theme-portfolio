@@ -30,7 +30,7 @@
   <header id="masthead" class="site-header" role="banner">
     <div class="logo-link">
       <a href="<?php echo get_option('home'); ?>">
-        <img src="<?php echo(get_stylesheet_directory_uri()) .'/images/n0z3ro-logo.png' ?>">
+        <img src="<?php echo(get_stylesheet_directory_uri()) .'/images/n0z3ro-logo.png' ?>" alt="n0z3ro Logo">
       </a>
     </div>
     <div class="site-title">

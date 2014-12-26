@@ -24,7 +24,12 @@ body{
 h1{
   font-size: 200%;
 }
-
+h2{
+  font-size: 150%;
+}
+h3{
+  font-size:125%;
+}
 //Page Specific Styles
 header{
   position:relative;
@@ -79,4 +84,24 @@ header{
     transform: translate(-50%,-50%);
     color: $n0_light;
   }
+}
+#main{
+  width:95%;
+  margin: 0px auto;
+  padding-bottom: $footer-height;
+}
+.sub-header{
+  text-align: center;
+  padding: 30px 0px 10px 0px;
+}
+.page-intro{
+  text-align:center;
+  padding-bottom: 20px;
+}
+footer{
+  position:fixed;
+  height:$footer-height;
+  background-color: $n0_light_grey;
+  width:100%;
+  bottom:0;
 }
