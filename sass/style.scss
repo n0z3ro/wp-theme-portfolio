@@ -19,6 +19,7 @@ Tags: responsive, custom-backgroud, custom-header, custom-menu, featured-images,
 //Generic HTML Tag Styles
 body{
   background-color:$n0_light;
+  font-family: 'Anonymous Pro';
 }
 h1{
   font-size: 200%;
@@ -27,6 +28,16 @@ h1{
 //Page Specific Styles
 header{
   position:relative;
+  nav{
+    height:25px;
+    background-color:$n0_light_grey;
+    ul{
+      clear:both;
+      li{
+        float:left;
+      }
+    }
+  }
 }
 .logo-link{
   position:absolute;
@@ -35,7 +46,11 @@ header{
   left:0;
   width:50px;
   height:50px;
-  background-color:blue;
+  background-color:$n0_light_grey;
+  img{
+    max-width:100%;
+    max-height:100%;
+  }
 }
 .site-title{
   position:relative;
