@@ -12,14 +12,23 @@
     <h3>
       Latest Portfolio Entries
     </h3>
-    <?php while ( have_posts() ) : the_post() ?>
-      <?php
-      if (has_post_thumbnail()){
-        the_post_thumbnail('thumbnail');
-      }
-      ?>
-      <?php //the_content(); ?>
-    <?php endwhile; ?>
+      <ul>
+      <?php while ( have_posts() ) : the_post() ?>
+        <?php if (has_post_thumbnail()){ ?>
+          <?php
+          $title_alt = get_the_title();
+          $thumbnail_attr = array(
+            'alt' => $title_alt
+          );
+          ?>
+          <li class="home-post-image">
+            <?php the_post_thumbnail('full', $thumbnail_attr); ?>
+          </li>
+        <?php } ?>
+        <?php //the_content(); ?>
+      <?php endwhile; ?>
+      <li class="clear-both"></li>
+    </ul>
   </div><!-- .latest-posts -->
   <div class="recommendations">
     <!-- Convert to Loop for Custom Post Type "quote" -->

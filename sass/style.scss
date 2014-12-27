@@ -30,6 +30,9 @@ h2{
 h3{
   font-size:125%;
 }
+.clear-both{
+  clear:both;
+}
 //Page Specific Styles
 header{
   position:relative;
@@ -97,6 +100,18 @@ header{
 .page-intro{
   text-align:center;
   padding-bottom: 20px;
+}
+.latest-posts{
+
+}
+.home-post-image{
+  width:20%;
+  margin: 0% 2% 0% 2%;
+  float:left;
+  img{
+    max-width:100%;
+    height:auto;
+  }
 }
 footer{
   position:fixed;
