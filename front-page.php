@@ -18,11 +18,14 @@
           <?php
           $title_alt = get_the_title();
           $thumbnail_attr = array(
-            'alt' => $title_alt
+            'alt' => $title_alt,
+            'title' => $title_alt
           );
           ?>
           <li class="home-post-image">
-            <?php the_post_thumbnail('full', $thumbnail_attr); ?>
+            <a href="<?php echo get_permalink(); ?>">
+              <?php the_post_thumbnail('full', $thumbnail_attr); ?>
+            </a>
           </li>
         <?php } ?>
         <?php //the_content(); ?>
