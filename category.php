@@ -2,20 +2,16 @@
 
 <div id="primary" class="content-area">
   <h2 class="sub-header">
-    Welcome!
-  </h2> <!-- .sub-header -->
-  <div class="page-intro">
-    n0z3ro's Studio provides web and digital creative services. <br>
-    This is a collection of the Studio's best work so far.
-  </div><!-- .intro-text -->
-  <div class="latest-posts">
-    <h3>
-      <?php
+    <?php
       $cat = get_query_var('cat');
       $currentcat = get_category ($cat);
       echo $currentcat->cat_name;
-      ?>
-    </h3>
+    ?>
+  </h2> <!-- .sub-header -->
+  <div class="page-intro">
+    Select an image for details.
+  </div><!-- .intro-text -->
+  <div class="latest-posts">
       <ul>
       <?php while ( have_posts() ) : the_post() ?>
         <?php if (has_post_thumbnail()){ ?>

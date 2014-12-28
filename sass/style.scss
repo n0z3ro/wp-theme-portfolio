@@ -37,7 +37,7 @@ h3{
 header{
   position:relative;
   nav{
-    height:$nav-height;
+    min-height:$nav-height;
     background-color:$n0_blue;
     div{
       height:100%;
@@ -47,6 +47,7 @@ header{
       li{
         display:inline-block;
         line-height: $nav-height;
+        margin: 0px 8px;
         a{
           font-family:"Consolas";
           color:$n0_light;
@@ -101,9 +102,6 @@ header{
   text-align:center;
   padding-bottom: 20px;
 }
-.latest-posts{
-
-}
 .home-post-image{
   width:20%;
   margin: 0% 2% 0% 2%;
@@ -115,6 +113,9 @@ header{
     max-width:100%;
     height:auto;
   }
+}
+.primary-img img{
+  margin: 0px auto;
 }
 footer{
   position:fixed;

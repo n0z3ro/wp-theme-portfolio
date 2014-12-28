@@ -40,6 +40,7 @@
     </div>
     <nav class="site-navigation main-navigation" role="navigation">
       <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+      <div class="clear-both"></div>
     </nav><!-- .site-navigation .main-navigation -->
   </header><!-- #masthead .site-header -->
 <div id="main" class="site-main" role="main">
