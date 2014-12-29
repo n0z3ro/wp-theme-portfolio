@@ -12,7 +12,8 @@ add_action('wp_print_styles', 'load_fonts');
 function theme_settings(){
   add_theme_support('automatic-feed-links');
   add_theme_support('title-tag');
-  add_theme_support( 'html5', array(
+  add_theme_support('custom-header');
+  add_theme_support('html5', array(
     'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
   ));
   add_theme_support('custom-background',apply_filters('n0z3ro_p_custom_background_args',array(

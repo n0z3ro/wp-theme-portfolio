@@ -1,23 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-  <!--<title>-->
-    <?php
-    //Alt title method w/page numbers
-    /*
-    global $page, $paged;
-    wp_title( '|', true, 'right' );
-    bloginfo( 'name' );
-    // Add the blog description for the home/front page.
-    $site_description = get_bloginfo( 'description', 'display' );
-    if ( $site_description && ( is_home() || is_front_page() ) )
-    echo " | $site_description";
-    // Add a page number if necessary:
-    if ( $paged >= 2 || $page >= 2 )
-    echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
-    */
-    ?>
-  <!--</title>-->
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -29,7 +12,7 @@
 <div id="page" class="hfeed site">
   <header id="masthead" class="site-header" role="banner">
     <div class="logo-link">
-      <a href="<?php echo get_option('home'); ?>">
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
         <img src="<?php echo(get_stylesheet_directory_uri()) .'/images/n0z3ro-logo.png' ?>" alt="n0z3ro Logo">
       </a>
     </div>

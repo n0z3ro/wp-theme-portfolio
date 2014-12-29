@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <?php
     while ( have_posts() ) : the_post();
     the_title('<h2 class="sub-header">', '</h2>'); 
