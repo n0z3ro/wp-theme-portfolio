@@ -23,12 +23,15 @@ body{
 }
 h1{
   font-size: 200%;
+  font-weight: 700;
 }
 h2{
   font-size: 150%;
+  font-weight: 700;
 }
 h3{
   font-size:125%;
+  font-weight: 700;
 }
 .clear-both{
   clear:both;
@@ -137,10 +140,10 @@ header{
   img{
     max-width:100%;
     height:auto;
-    box-shadow: $n0-shadow;
+    box-shadow: $n0-shadow $n0-light-grey;
     transition: box-shadow 1s ease;
     &:hover{
-      box-shadow: 0px 0px 4px 2px $n0-blue;
+      box-shadow: $n0-shadow $n0-blue;
     }
   }
 }
@@ -155,6 +158,10 @@ header{
 .primary-img img{
   margin: 10px auto 25px auto;
   display:block;
+  box-shadow: $n0-shadow $n0-light-grey;
+}
+.post-content{
+  text-align:center;
 }
 footer{
   position:fixed;
