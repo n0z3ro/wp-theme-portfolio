@@ -12,24 +12,30 @@
     <h3>
       Latest Portfolio Entries
     </h3>
-      <ul>
-      <?php while ( have_posts() ) : the_post() ?>
-        <?php if (has_post_thumbnail()){ ?>
-          <?php
-          $title_alt = get_the_title();
-          $thumbnail_attr = array(
-            'alt' => $title_alt,
-            'title' => $title_alt
-          );
-          ?>
-          <li class="list-post-image">
-            <a href="<?php echo get_permalink(); ?>">
-              <?php the_post_thumbnail('full', $thumbnail_attr); ?>
-            </a>
-          </li>
-        <?php } ?>
-        <?php //the_content(); ?>
-      <?php endwhile; ?>
+    <ul>
+      <?php
+        $cats = get_categories();
+        foreach ($cats as $cat) {
+          $cat_id= $cat->term_id;
+          query_posts("cat=$cat_id&orderby=date&posts_per_page=1");
+          if (have_posts()) : while (have_posts()) : the_post();
+            if (has_post_thumbnail()){
+              $title_alt = get_the_title();
+              $thumbnail_attr = array(
+                'alt' => $title_alt,
+                'title' => $title_alt
+              );
+      ?>
+              <li class="list-post-image">
+                <a href="<?php echo get_permalink(); ?>">
+                  <?php the_post_thumbnail('full', $thumbnail_attr); ?>
+                </a>
+              </li>
+      <?php
+            }
+          endwhile; endif; 
+        }
+      ?>
       <li class="clear-both"></li>
     </ul>
   </div><!-- .latest-posts -->
