@@ -38,7 +38,7 @@
     <h3>
       Recommendations
     </h3>
-    <div class="Quote">
+    <div class="quote">
       "Lorem Ipsum and filler text and such"<br>
       - Author
     </div>
