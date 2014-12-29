@@ -1,0 +1,73 @@
+/*! Header */
+header{
+  position:relative;
+  nav{
+    min-height:$nav-height;
+    background-color:$n0-blue;
+    div{
+      height:100%;
+    }
+    ul{
+      text-align:center;
+      li{
+        display:inline-block;
+        line-height: $nav-height;
+        margin: 0px 8px;
+        a{
+          font-family:"Consolas";
+          color:$n0-light;
+          font-size:110%;
+          text-decoration:none;
+        }
+        &:hover > .sub-menu{
+          visibility:visible;
+          opacity:1;
+          transition-delay:0s;
+        }
+      }
+      .sub-menu{
+        visibility:hidden;
+        opacity: 0;
+        transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+        position:absolute;
+        top:$nav-height+$header-height;
+        background-color:$n0-light-grey;
+        color:$n0-dark-grey;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+}
+.logo-link{
+  position:absolute;
+  z-index:2;
+  top:0;
+  left:0;
+  width:$header-height;
+  height:$header-height;
+  background-color:$n0-light-grey;
+  img{
+    max-width:100%;
+    max-height:100%;
+  }
+}
+.site-title{
+  position:relative;
+  height:$header-height;
+  width:100%;
+  margin:0px;
+  background-color:$n0-yellow;
+  transform-style: preserve-3d;
+  h1{
+    position:absolute;
+    margin:0px;
+    text-align:center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    color: $n0-light;
+  }
+}

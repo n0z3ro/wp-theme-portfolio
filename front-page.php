@@ -22,7 +22,7 @@
             'title' => $title_alt
           );
           ?>
-          <li class="home-post-image">
+          <li class="list-post-image">
             <a href="<?php echo get_permalink(); ?>">
               <?php the_post_thumbnail('full', $thumbnail_attr); ?>
             </a>

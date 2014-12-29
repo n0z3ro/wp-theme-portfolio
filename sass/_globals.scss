@@ -1,0 +1,54 @@
+/*! Globals */
+body{
+  background-color:$n0-light;
+  font-family: 'Anonymous Pro';
+}
+h1{
+  font-size: 200%;
+  font-weight: 700;
+}
+h2{
+  font-size: 150%;
+  font-weight: 700;
+}
+h3{
+  font-size:125%;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.clear-both{
+  clear:both;
+}
+a:hover{
+  text-decoration:underline;
+}
+#main{
+  width:95%;
+  margin: 0px auto;
+  padding-bottom: $footer-height + 15;
+}
+.sub-header{
+  text-align: center;
+  padding: 40px 0px 10px 0px;
+}
+.page-intro{
+  text-align:center;
+  padding-bottom: 20px;
+}
+.list-post-image{
+  width:20%;
+  margin: 0% 2% 0% 2%;
+  float:left;
+  a{
+    display:block;
+  }
+  img{
+    max-width:100%;
+    height:auto;
+    box-shadow: $n0-shadow $n0-light-grey;
+    transition: box-shadow 1s ease;
+    &:hover{
+      box-shadow: $n0-shadow $n0-blue;
+    }
+  }
+}
