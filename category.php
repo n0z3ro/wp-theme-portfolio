@@ -3,8 +3,7 @@
 <div id="primary" class="content-area">
   <h2 class="sub-header">
     <?php
-      $cat = get_query_var('cat');
-      $currentcat = get_category ($cat);
+      $currentcat = get_category(get_query_var('cat'));
       echo $currentcat->cat_name;
     ?>
   </h2> <!-- .sub-header -->

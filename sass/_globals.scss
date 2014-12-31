@@ -19,6 +19,10 @@ h3{
 .clear-both{
   clear:both;
 }
+a{
+  text-decoration:none;
+  color: $n0_blue;
+}
 a:hover{
   text-decoration:underline;
 }
