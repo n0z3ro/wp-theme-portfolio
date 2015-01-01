@@ -9,6 +9,9 @@ add_action('wp_enqueue_scripts', 'theme_scripts');
 add_action('wp_print_styles', 'load_fonts');
 add_action('widgets_init', 'n0_widgets_init');
 
+//filters
+add_filter('widget_text', 'do_shortcode');
+
 //functions
 function theme_settings(){
   add_theme_support('automatic-feed-links');
@@ -39,6 +42,14 @@ function n0_widgets_init(){
   register_sidebar(array(
     'name' => 'Categories List',
     'id' => 'cat_list',
+    'before_widget' => '<div>',
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  ));
+  register_sidebar(array(
+    'name' => 'Contact Form',
+    'id' => 'contact_form',
     'before_widget' => '<div>',
     'after_widget' => '</div>',
     'before_title' => '<h3>',

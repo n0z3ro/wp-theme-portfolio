@@ -7,10 +7,14 @@ Template Name: Contact Page
 
 <div id="primary" class="content-area">
   
-  <?php while ( have_posts() ) : the_post() ?>
-    <?php the_content(); ?>
-  <?php endwhile; ?>
-  CONTACT
+  <?php
+    while ( have_posts() ) : the_post();
+      the_content();
+    endwhile;
+    if (is_active_sidebar('contact_form')) :
+      dynamic_sidebar( 'contact_form' );
+    endif;
+  ?>
 </div><!-- #primary .content-area -->
 
 <?php get_sidebar(); ?>
