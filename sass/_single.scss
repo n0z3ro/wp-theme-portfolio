@@ -28,8 +28,10 @@
   height:100px;
   opacity: .8;
   font-size:0px;
+  box-shadow: $n0-shadow $n0-light-grey;
   &:hover{
     opacity: 1;
+    box-shadow: $n0-shadow $n0-blue;
   }
   a{
     display:block;

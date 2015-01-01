@@ -20,9 +20,11 @@
                 (string)$nextthumbnail = $nextthumbnail[0];
                 next_post_link('<div class="next-post-link nav-post-link" style="background:url('.get_stylesheet_directory_uri().'/images/dark-nav-arrow-left.png) 0 0 / 100px 100px no-repeat, url('.$nextthumbnail.') 0 0 / 100px 100px no-repeat;">%link</div>', '%title', TRUE);
               }else{
+                if (is_active_sidebar('cat_list')) :
+                  dynamic_sidebar( 'cat_list' );
+                endif;
+              };
             ?>
-              no next post
-            <?php }; ?>
           </div>
           <div class="primary-img">
             <?php the_post_thumbnail(); ?>
@@ -35,9 +37,11 @@
                 (string)$prevthumbnail = $prevthumbnail[0];
                 previous_post_link('<div class="prev-post-link nav-post-link" style="background:url('.get_stylesheet_directory_uri().'/images/dark-nav-arrow-right.png) 0 0 / 100px 100px no-repeat, url('.$prevthumbnail.') 0 0 / 100px 100px no-repeat;">%link</div>', '%title', TRUE);
               }else{
+                if (is_active_sidebar('cat_list')) :
+                  dynamic_sidebar( 'cat_list' );
+                endif;
+              };
             ?>
-              no prev post
-            <?php }; ?>
           </div>
         </div>
         <div class="post-content">

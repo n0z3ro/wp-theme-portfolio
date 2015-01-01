@@ -7,6 +7,7 @@ if (! isset($content_width)){
 add_action('after_setup_theme', 'theme_settings');
 add_action('wp_enqueue_scripts', 'theme_scripts');
 add_action('wp_print_styles', 'load_fonts');
+add_action('widgets_init', 'n0_widgets_init');
 
 //functions
 function theme_settings(){
@@ -32,5 +33,15 @@ function theme_scripts() {
 }
 function load_fonts() {
   wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Anonymous+Pro:400,400italic,700,700italic');
-  wp_enqueue_style( 'googleFonts');
+  wp_enqueue_style('googleFonts');
+}
+function n0_widgets_init(){
+  register_sidebar(array(
+    'name' => 'Categories List',
+    'id' => 'cat_list',
+    'before_widget' => '<div>',
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  ));
 }
