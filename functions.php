@@ -50,7 +50,7 @@ function n0_widgets_init(){
   register_sidebar(array(
     'name' => 'Contact Form',
     'id' => 'contact_form',
-    'before_widget' => '<div>',
+    'before_widget' => '<div class="contact-form">',
     'after_widget' => '</div>',
     'before_title' => '<h3>',
     'after_title' => '</h3>',
