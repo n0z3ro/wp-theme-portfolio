@@ -1,3 +1,4 @@
+    <div class="clear-both"></div>
     </div><!-- #main .site-main -->
       <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="site-info">

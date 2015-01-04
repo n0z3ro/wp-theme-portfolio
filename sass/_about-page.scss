@@ -1,0 +1,19 @@
+/*! About Page  */
+
+.ext-link-list{
+  li{
+    display:block;
+    float:left;
+    width:25%;
+    a{
+      display:block;
+      width: $ext-link-height;
+      height: $ext-link-height;
+      margin: 0px auto;
+      img{
+        max-width:100%;
+        max-height:100%;
+      }
+    }
+  }
+}
