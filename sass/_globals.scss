@@ -2,6 +2,7 @@
 body{
   background-color:$n0-light;
   font-family: 'Anonymous Pro';
+  min-width: $min-content-width;
 }
 h1{
   font-size: 200%;
@@ -31,6 +32,9 @@ a:hover{
   max-width: $max-content-width;
   margin: 0px auto;
   padding-bottom: $footer-height + 15;
+}
+.single #main{
+  min-width: $max-content-width; //keeps wide images from being covered by the side nav
 }
 .sub-header{
   text-align: center;
