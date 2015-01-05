@@ -28,6 +28,7 @@ a:hover{
 }
 #main{
   width:95%;
+  max-width: $max-content-width;
   margin: 0px auto;
   padding-bottom: $footer-height + 15;
 }
@@ -41,7 +42,7 @@ a:hover{
 }
 .list-post-image{
   width:20%;
-  margin: 0% 2% 0% 2%;
+  margin: 0% 2% 2% 2%;
   float:left;
   a{
     display:block;

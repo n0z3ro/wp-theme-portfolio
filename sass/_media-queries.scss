@@ -1,0 +1,11 @@
+/*! Media Queries  */
+
+@media screen and (max-width: $max-content-width - 200) {
+  body{
+    //background-color:blue;
+  }
+  .list-post-image{
+    width: 46%;
+    //margin: 0% 2% 2% 2%;
+  }
+}
