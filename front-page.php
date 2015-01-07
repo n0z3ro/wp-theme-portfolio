@@ -45,8 +45,8 @@
       Recommendations
     </h3>
     <div class="quote">
-      "Lorem Ipsum and filler text and such"<br>
-      - Author
+      "Besides being a joy to work with, Clint is a creative problem solver who continually comes up with new ways to take care of problems and wow our clients. He has successfully developed several web application front ends for our company that have resulted in increased sales and customer satisfaction."<br>
+      - <a href="https://www.linkedin.com/in/whittle" target="_blank">Chris Whittle</a>
     </div>
   </div>
 </div><!-- #primary .content-area -->
