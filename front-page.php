@@ -25,10 +25,12 @@
                 'alt' => $title_alt,
                 'title' => $title_alt
               );
+              $thumbnail_array = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+              $thumbnail_url = $thumbnail_array[0];
       ?>
               <li class="list-post-image">
-                <a href="<?php echo get_permalink(); ?>">
-                  <?php the_post_thumbnail('full', $thumbnail_attr); ?>
+                <a href="<?php echo get_permalink(); ?>" style="background-image:url( <?php echo $thumbnail_url ?> );">
+                  <?php //the_post_thumbnail('full', $thumbnail_attr); ?>
                 </a>
               </li>
       <?php
