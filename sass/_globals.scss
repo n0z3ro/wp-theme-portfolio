@@ -55,7 +55,8 @@ a:hover{
     text-indent: 150%;
     white-space: nowrap;
     overflow: hidden;
-    background-size: cover;
+    background-size: auto 100%;
+    background-repeat:no-repeat;
     background-position: top center;
     box-shadow:0px 0px 4px 2px #A3A3A3;
     transition:box-shadow 1s ease;

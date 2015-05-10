@@ -5,8 +5,8 @@
     Welcome!
   </h2> <!-- .sub-header -->
   <div class="page-intro">
-    n0z3ro's Studio provides web and digital creative services. <br>
-    This is a collection of the Studio's best work so far.
+    I take ideas and designs for the web and turn them into reality.<br>
+    This is a collection of some of my favorite work so far.
   </div><!-- .intro-text -->
   <div class="latest-posts">
     <h3>
@@ -14,7 +14,11 @@
     </h3>
     <ul>
       <?php
-        $cats = get_categories();
+        $cat_args = array(
+          'parent' => 0,
+          'hide_empty' => 0
+        );
+        $cats = get_categories($cat_args);
         foreach ($cats as $cat) {
           $cat_id= $cat->term_id;
           query_posts("cat=$cat_id&orderby=date&posts_per_page=1");
