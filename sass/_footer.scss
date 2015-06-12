@@ -5,4 +5,60 @@ footer{
   background-color: $n0-light-grey;
   width:100%;
   bottom:0;
+  color: $n0-footer-text;
+  .site-info{
+  	position:relative;
+  	width:100%;
+  	height:$footer-height;
+  }
+  .foot-copyright{
+  	line-height: $footer-height;
+  	text-indent: 10px;
+  }
+  .foot-soc-links{
+  	position:absolute;
+  	right: 0px;
+  	top: 5px;
+  	a{
+  		display:block;
+  		width:$footer-height - 10;
+  		height:$footer-height - 10;
+  		font-size: 0px;
+  		float:left;
+  		margin-right: 10px;
+  		background-size: 100% 100%;
+  		border-radius:3px;
+
+  		-webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		-ms-filter: grayscale(100%);
+		-o-filter: grayscale(100%);
+		filter: grayscale(100%);
+  		
+  		-webkit-transition: 1s -webkit-filter ease;
+		-moz-transition: 1s -moz-filter ease;
+		-moz-transition: 1s filter ease;
+		-ms-transition: 1s -ms-filter ease;
+		-o-transition: 1s -o-filter ease;
+		transition: 1s filter ease;
+
+  		&:hover{
+	  		-webkit-filter: none;
+			-moz-filter: none;
+			-ms-filter: none;
+			-o-filter: none;
+			filter: none;
+  		}
+  	}
+  	.youtube-link{
+  		background-image:url('images/youtube.png');
+  	}
+  	.linkedin-link{
+  		background-image:url('images/linkedin.png');
+  	}
+  	.twitter-link{
+  		background-image:url('images/twitter.png');
+  		background-color:#FFFFFF;
+  	}
+  }
 }
