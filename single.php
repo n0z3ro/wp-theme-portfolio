@@ -25,7 +25,21 @@
             ?>
           </div>
           <div class="primary-img">
-            <?php the_post_thumbnail(); ?>
+            <?php
+            //$getcat = get_the_category();
+            foreach ( $getcat as $category ) {
+              if ($category->name == 'Flash'){
+                $flash_detected = true;
+              }
+            }
+            
+            if ($flash_detected == true){
+              the_content();
+            }else{
+              the_post_thumbnail();
+            }
+
+            ?>
           </div>
           <div class="prev-post-wrap post-nav-wrap">
             <?php
@@ -43,7 +57,13 @@
           </div>
         </div>
         <div class="post-content">
-          <?php the_content(); ?>
+          <?php
+            if ($flash_detected == true){
+              //content already posted
+            }else{
+              the_content();
+            }
+          ?>
         </div>
   <?php } ?>
   <?php endwhile; ?>

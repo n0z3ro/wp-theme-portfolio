@@ -6,10 +6,13 @@
 .post-wrap{
   position:relative;
 }
-.primary-img img{
-  margin: 10px auto 25px auto;
-  display:block;
-  box-shadow: $n0-shadow $n0-light-grey;
+.primary-img{ 
+  text-align:center;
+  img{
+    margin: 10px auto 25px auto;
+    display:block;
+    box-shadow: $n0-shadow $n0-light-grey;
+  }
 }
 .post-nav-wrap{
   position:absolute;
