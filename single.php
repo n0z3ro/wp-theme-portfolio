@@ -4,9 +4,7 @@
   <?php
     while ( have_posts() ) : the_post();
       $getcat = get_the_category();
-      foreach(get_the_category() as $category){
-        echo '<h2 class="sub-header"><a href="'. get_category_link($category->term_id) . '">' . $category->name . '</a></h2>';
-      }
+      echo '<h2 class="sub-header"><a href="'. get_category_link($getcat[0]->term_id) . '">' . $getcat[0]->name . '</a></h2>';
       the_title('<h2 class="post-title">', '</h2>');
       
       if (has_post_thumbnail()){
