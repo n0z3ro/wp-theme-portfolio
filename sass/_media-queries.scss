@@ -24,7 +24,12 @@
       div{
       }
       ul{
-        text-align:center;
+        height:$nav-height;
+        overflow:hidden;
+       .mobile-tag{
+          display:block;
+          background-image: transparent;
+        }
         li{
           display:block;
           border-bottom:2px solid $n0-light;
