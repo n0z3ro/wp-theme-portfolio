@@ -3,6 +3,48 @@
 @media screen and (max-width: $max-content-width - 200) {
   .list-post-image{
     width: 46%;
-    //margin: 0% 2% 2% 2%;
+  }
+}
+
+/*iPhone*/
+@media screen and (max-width: 320px) {
+  body{
+   min-width:320px;
+  }
+  .site-title h1{
+    font-size:100%;
+  }
+  .page-intro{
+    text-align:justify;
+   width:80%;
+   margin: 0px auto;
+  }
+  header{
+    nav{
+      div{
+      }
+      ul{
+        text-align:center;
+        li{
+          display:block;
+          border-bottom:2px solid $n0-light;
+          margin:0px auto;
+          a{
+            font-size:80%;
+          }
+          &:hover > .sub-menu{
+            //display:block;
+            position:relative;
+            visibility:visible;
+            opacity:1;
+            transition-delay:0s;
+          }
+        }
+        .sub-menu{
+          top:0px;
+          transition:visibility 0s linear 0s,opacity 0.5s linear;
+        }
+      }
+    }
   }
 }
