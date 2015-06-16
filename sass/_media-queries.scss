@@ -35,6 +35,9 @@
           border-bottom:2px solid $n0-light;
           margin:0px auto;
           a{
+            display:block;
+            width:100%;
+            height:100%;
             font-size:80%;
           }
           &:hover > .sub-menu{

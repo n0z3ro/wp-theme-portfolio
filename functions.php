@@ -32,7 +32,7 @@ function theme_settings(){
 }
 function theme_scripts() {
   wp_enqueue_style('main', get_stylesheet_uri());
-  //wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+  wp_enqueue_script( 'n0z_scripts', get_stylesheet_directory_uri() . '/js/mobile-ui.js', array(), '20120206', true );
 }
 function load_fonts() {
   wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Anonymous+Pro:400,400italic,700,700italic');
