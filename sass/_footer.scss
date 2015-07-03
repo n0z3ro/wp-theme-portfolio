@@ -50,15 +50,21 @@ footer{
 			filter: none;
   		}
   	}
+    .googleplus-link{
+      background-image:url('images/google-plus.png');
+    }
+    .twitchtv-link{
+      background-image:url('images/twitchtv-square.png');
+    }
   	.youtube-link{
   		background-image:url('images/youtube.png');
   	}
   	.linkedin-link{
   		background-image:url('images/linkedin.png');
   	}
-  	.twitter-link{
+  	/*.twitter-link{
   		background-image:url('images/twitter.png');
   		background-color:#FFFFFF;
-  	}
+  	}*/
   }
 }
