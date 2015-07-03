@@ -1,13 +1,30 @@
 /*! Media Queries  */
-
-@media screen and (max-width: $max-content-width - 200) {
+@media only screen and (max-width:1150px) and (min-width: 1000px)  {
+  .list-post-image a{
+    width: 215px;
+  }
+}
+@media only screen and (max-width: $max-content-width - 200) {
   .list-post-image{
     width: 46%;
+  }
+  .list-post-image a{
+    margin:25px auto;
+  }
+}
+@media only screen and (max-width:625px) {
+  .list-post-image{
+    width: 100%;
+    float:none;
+    margin:0px auto;
+  }
+  body{
+    min-width: 100%;
   }
 }
 
 /*iPhone*/
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 530px) {
   body{
    min-width:320px;
   }
