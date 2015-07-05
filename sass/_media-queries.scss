@@ -41,8 +41,11 @@
       div{
       }
       ul{
-        height:$nav-height;
+        max-height:$nav-height;
         overflow:hidden;
+        -webkit-transition: max-height 0.8s ease-out 0s;
+        -moz-transition: max-height 0.8s ease-out 0s;
+        transition: max-height 0.8s ease-out 0s;
        .mobile-tag{
           display:block;
           background-image: transparent;
@@ -69,6 +72,12 @@
           top:0px;
           transition:visibility 0s linear 0s,opacity 0.5s linear;
         }
+      }
+      ul.mobile-closed{
+        max-height:$nav-height;
+      }
+      ul.mobile-open{
+        max-height:225px;
       }
     }
   }

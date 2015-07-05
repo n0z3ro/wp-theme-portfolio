@@ -12,14 +12,11 @@ window.onload = function () {
     if (mobileClasses.contains("mobile-open")){
       mobileClasses.remove("mobile-open");
       mobileClasses.add("mobile-closed");
-      mobilemenu.style.height = "30px";
     } else if (mobileClasses.contains("mobile-closed")){
       mobileClasses.remove("mobile-closed");
       mobileClasses.add("mobile-open");
-      mobilemenu.style.height = "auto";
     } else { //has neither class - uninitiated menu
       mobileClasses.add("mobile-open");
-      mobilemenu.style.height = "auto";
     };
 
   };
