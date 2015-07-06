@@ -14,6 +14,9 @@
     box-shadow: $n0-shadow $n0-light-grey;
   }
 }
+#n0_cat_list{
+  padding-left:15px;
+}
 .post-nav-wrap{
   position:absolute;
   top:50%;
@@ -21,9 +24,17 @@
 }
 .next-post-wrap{
   left:0%;
+  padding-left:$single-nav-padding;
+  #n0_cat_list{
+    text-align:left;
+  }
 }
 .prev-post-wrap{
   right:0%;
+  padding-right:$single-nav-padding;
+  #n0_cat_list{
+    text-align:right;
+  }
 }
 .nav-post-link{
   position:relative;

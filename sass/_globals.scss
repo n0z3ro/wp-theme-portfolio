@@ -34,7 +34,7 @@ a:hover{
   padding-bottom: $footer-height + 15;
 }
 .single #main{
-  min-width: $max-content-width; //keeps wide images from being covered by the side nav
+  min-width: 950px; //keeps wide images from being covered by the side nav
 }
 .sub-header{
   text-align: center;

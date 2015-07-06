@@ -42,7 +42,7 @@ function n0_widgets_init(){
   register_sidebar(array(
     'name' => 'Categories List',
     'id' => 'cat_list',
-    'before_widget' => '<div>',
+    'before_widget' => '<div id="n0_cat_list">',
     'after_widget' => '</div>',
     'before_title' => '<h3>',
     'after_title' => '</h3>',

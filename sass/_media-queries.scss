@@ -12,6 +12,13 @@
     margin:25px auto;
   }
 }
+@media only screen and (max-width:1000px) {
+  .nav-post-link{
+    width:60px;
+    height:60px;
+    background-size:100% !important;
+  }
+}
 @media only screen and (max-width:625px) {
   .list-post-image{
     width: 100%;
