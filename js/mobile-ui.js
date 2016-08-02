@@ -1,13 +1,15 @@
 window.onload = function () {
 
   var mobilemenu = document.getElementById("menu-main-nav");
+  var mobilesubmenu = document.getElementsByClassName("sub-menu")[0];
   var mobiletag = document.getElementsByClassName("mobile-tag");
 
-  mobiletag[0].addEventListener("click", toggleMobile, false);
+  mobiletag[0].addEventListener("click", function(e){toggleMobile(e, mobilemenu)}, false);
+  mobiletag[1].addEventListener("click", function(e){toggleMobile(e, mobilesubmenu)}, false);
   
-  function toggleMobile(evt) {
+  function toggleMobile(evt, menu_name) {
     
-    var mobileClasses = mobilemenu.classList;
+    var mobileClasses = menu_name.classList;
 
     if (mobileClasses.contains("mobile-open")){
       mobileClasses.remove("mobile-open");
