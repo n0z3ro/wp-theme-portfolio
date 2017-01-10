@@ -51,6 +51,7 @@
               }else{
                 if (is_active_sidebar('cat_list')) :
                   dynamic_sidebar( 'cat_list' );
+                  
                 endif;
               };
             ?>

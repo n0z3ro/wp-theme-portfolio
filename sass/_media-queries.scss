@@ -18,6 +18,14 @@
     height:60px;
     background-size:100% !important;
   }
+  .next-post-link{
+    background-image:url(../wp-theme-portfolio/images/dark-nav-arrow-left.png) !important;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .prev-post-link{
+    background-image:url(../wp-theme-portfolio/images/dark-nav-arrow-right.png) !important;
+    border-radius: 5px 0px 0px 5px;
+  }
 }
 @media only screen and (max-width:625px) {
   .list-post-image{

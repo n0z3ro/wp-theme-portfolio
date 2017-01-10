@@ -56,3 +56,16 @@ function n0_widgets_init(){
     'after_title' => '</h3>',
   ));
 }
+function n0_cat_func($atts, $content=null){
+  extract(shortcode_atts(array('id' => ''), $atts));
+  if (is_active_sidebar($id)){
+    ob_start();
+    dynamic_sidebar($id);
+    $widgets= ob_get_contents();
+    ob_end_clean();
+    return $widgets;
+  }else{
+    return "";
+  }
+}
+add_shortcode('n0_categories', 'n0_cat_func');

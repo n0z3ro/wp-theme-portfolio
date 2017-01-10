@@ -1,4 +1,7 @@
 /*! Single */
+.single #main{
+  max-width: 100%;
+}
 .post-title{
   text-align:center;
   margin-bottom:30px;
@@ -12,15 +15,21 @@
     margin: 10px auto 25px auto;
     display:block;
     box-shadow: $n0-shadow $n0-light-grey;
+    max-width:65%;
+    height:auto;
   }
 }
 #n0_cat_list{
   padding-left:15px;
+  .cat-item{
+    padding:5px 0px 5px 0px;
+  }
 }
 .post-nav-wrap{
   position:absolute;
   top:50%;
   transform: translate(0, -50%);
+  max-width: 15%;
 }
 .next-post-wrap{
   left:0%;
