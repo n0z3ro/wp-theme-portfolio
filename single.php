@@ -20,7 +20,18 @@
               }else{
                 if (is_active_sidebar('cat_list')) :
                   dynamic_sidebar( 'cat_list' );
-                endif;
+                  $args = [
+                    'post_type' => 'page',
+                    'fields' => 'ids',
+                    'nopaging' => true,
+                    'meta_key' => '_wp_page_template',
+                    'meta_value' => 'page-categorylinks.php'
+                  ];
+                  $pages = get_posts( $args );
+                  foreach ( $pages as $page )?>
+                    <div class="next-cat-page mobile-post-link"><a href="<?php echo get_page_link($page); ?>">Other Categories</a></div>
+                  <?php  wp_reset_postdata();
+                   endif;
               };
             ?>
           </div>
@@ -51,8 +62,18 @@
               }else{
                 if (is_active_sidebar('cat_list')) :
                   dynamic_sidebar( 'cat_list' );
-                  
-                endif;
+                  $args = [
+                    'post_type' => 'page',
+                    'fields' => 'ids',
+                    'nopaging' => true,
+                    'meta_key' => '_wp_page_template',
+                    'meta_value' => 'page-categorylinks.php'
+                  ];
+                  $pages = get_posts( $args );
+                  foreach ( $pages as $page )?>
+                    <div class="prev-cat-page mobile-post-link"><a href="<?php echo get_page_link($page); ?>">Other Categories</a></div>
+                  <?php  wp_reset_postdata();
+                   endif;
               };
             ?>
           </div>

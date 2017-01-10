@@ -13,6 +13,12 @@
   }
 }
 @media only screen and (max-width:1000px) {
+  .post-nav-wrap #n0_cat_list{
+    display:none;
+  }
+  .mobile-post-link{
+    display:block;
+  }
   .nav-post-link{
     width:60px;
     height:60px;

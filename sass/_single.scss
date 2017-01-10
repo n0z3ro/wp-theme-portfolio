@@ -25,6 +25,15 @@
     padding:5px 0px 5px 0px;
   }
 }
+body.page-template-page-categorylinks{
+  h3{
+    padding: 40px 0px 10px 0px;
+    font-size: 150%;
+  }
+  #n0_cat_list{
+    text-align:center;
+  }
+}
 .post-nav-wrap{
   position:absolute;
   top:50%;
@@ -61,6 +70,29 @@
     width:100%;
     height:100%;
   }
+}
+.mobile-post-link{
+  display:none;
+  width:60px;
+  height:60px;
+  opacity: .8;
+  font-size:0px;
+  box-shadow: $n0-shadow $n0-light-grey;
+  &:hover{
+    opacity:1;
+    box-shadow:$n0-shadow $n0-blue;
+  }
+  a{
+    display:block;
+    width:100%;
+    height:100%;
+  }
+}
+.next-cat-page{
+  background:url(../wp-theme-portfolio/images/dark-nav-arrow-left.png) 0 0 / 60px 60px;
+}
+.prev-cat-page{
+  background:url(../wp-theme-portfolio/images/dark-nav-arrow-right.png) 0 0 / 60px 60px;
 }
 .post-content{
   text-align:center;
