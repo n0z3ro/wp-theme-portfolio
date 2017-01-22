@@ -13,6 +13,9 @@
   }
 }
 @media only screen and (max-width:1000px) {
+  .single #main{
+    width:100%;
+  }
   .post-nav-wrap #n0_cat_list{
     display:none;
   }
@@ -22,15 +25,26 @@
   .nav-post-link{
     width:60px;
     height:60px;
-    background-size:100% !important;
+    border:solid 1px rgba(0,0,0,0.5);
+    box-shadow:none;
+  }
+  .next-post-wrap{
+    padding-left:0px;
   }
   .next-post-link{
-    background-image:url(../wp-theme-portfolio/images/dark-nav-arrow-left.png) !important;
+    background:no-repeat center/100% 100% url(../wp-theme-portfolio/images/dark-nav-arrow-left.png) !important;
     border-radius: 0px 5px 5px 0px;
   }
+  .prev-post-wrap{
+    padding-right:0px;
+  }
   .prev-post-link{
-    background-image:url(../wp-theme-portfolio/images/dark-nav-arrow-right.png) !important;
+    background:no-repeat center/100% 100% url(../wp-theme-portfolio/images/dark-nav-arrow-right.png) !important;
     border-radius: 5px 0px 0px 5px;
+  }
+  .post-content p{
+    width:90%;
+    margin:0px auto;
   }
 }
 @media only screen and (max-width:625px) {

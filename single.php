@@ -29,7 +29,7 @@
                   ];
                   $pages = get_posts( $args );
                   foreach ( $pages as $page )?>
-                    <div class="next-cat-page mobile-post-link"><a href="<?php echo get_page_link($page); ?>">Other Categories</a></div>
+                    <div class="next-post-link nav-post-link mobile-post-link"><a href="<?php echo get_page_link($page); ?>">Other Categories</a></div>
                   <?php  wp_reset_postdata();
                    endif;
               };
@@ -71,7 +71,7 @@
                   ];
                   $pages = get_posts( $args );
                   foreach ( $pages as $page )?>
-                    <div class="prev-cat-page mobile-post-link"><a href="<?php echo get_page_link($page); ?>">Other Categories</a></div>
+                    <div class="prev-post-link nav-post-link mobile-post-link"><a href="<?php echo get_page_link($page); ?>">Other Categories</a></div>
                   <?php  wp_reset_postdata();
                    endif;
               };
